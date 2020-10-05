@@ -5,8 +5,19 @@
    <meta charset="UTF-8">
    <title>Document</title>
 </head>
-<body>
-  <button>change color</button>
-   <img src="./images/white.png" alt="white circle">
+<body id = "colorTest">
+<button onclick="myFunction()">Set background</button>
+<h1 id="font">Hello Web</h1>
+
+<script>
+function myFunction() {
+   if(document.body.style.background == "black"){
+      document.body.style.background = "white";
+   } else{
+      document.body.style.background = "black";
+   }
+}
+</script>
+   
 </body>
 </html>
